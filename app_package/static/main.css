@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #333;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.event-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.event-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    flex: 1 1 250px;
+}
+
+.flash-messages li {
+    list-style: none;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.flash-messages .error {
+    background: #fdd;
+}
+
+.flash-messages .success {
+    background: #dfd;
+}
+
+@media (max-width: 600px) {
+    .event-list {
+        flex-direction: column;
+    }
+}
+
+.cancel-btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.cancel-btn:hover {
+    background: #cc0000;
+}
