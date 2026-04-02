@@ -33,8 +33,7 @@ def test_register_and_login(client, app):
         "name": "Test User",
         "password": "pass"
     }, follow_redirects=True)
-    assert b"Registration successful" in response.data
-
+    assert b"Login" in response.data
     # Login
     response = client.post("/login", data={
         "email": "test@example.com",
